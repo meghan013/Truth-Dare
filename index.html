@@ -5,111 +5,110 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Truth or Dare Gun Spinner</title>
   <style>
-   body {
-  font-family: 'Georgia', serif;
-  background: linear-gradient(135deg, #4e3620, #7b5e3e);
-  color: #f5e6d0;
-  text-align: center;
-  padding: 20px;
-  margin: 0;
-}
+    body {
+      font-family: 'Georgia', serif;
+      background: linear-gradient(135deg, #4e3620, #7b5e3e);
+      color: #f5e6d0;
+      text-align: center;
+      padding: 20px;
+      margin: 0;
+    }
 
-h1 {
-  color: #f4d4a3;
-  font-size: 3em;
-  margin-bottom: 20px;
-  text-shadow: 2px 2px #2c1b0e;
-}
+    h1 {
+      color: #f4d4a3;
+      font-size: 3em;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px #2c1b0e;
+    }
 
-#start, #setup, #game {
-  display: none;
-}
+    #start, #setup, #game {
+      display: none;
+    }
 
-label {
-  font-size: 1.3em;
-  color: #edd3b4;
-}
+    label {
+      font-size: 1.3em;
+      color: #edd3b4;
+    }
 
-input[type="number"], input[type="text"] {
-  padding: 10px;
-  font-size: 1.05em;
-  border: 1px solid #3e2c1a;
-  border-radius: 6px;
-  margin: 10px 0;
-  width: 240px;
-  background-color: #5a4032;
-  color: #fff8e1;
-}
+    input[type="number"], input[type="text"] {
+      padding: 10px;
+      font-size: 1.05em;
+      border: 1px solid #3e2c1a;
+      border-radius: 6px;
+      margin: 10px 0;
+      width: 240px;
+      background-color: #5a4032;
+      color: #fff8e1;
+    }
 
-input:focus {
-  border-color: #deb887;
-  background-color: #6e4f3c;
-  outline: none;
-}
+    input:focus {
+      border-color: #deb887;
+      background-color: #6e4f3c;
+      outline: none;
+    }
 
-button {
-  background-color: #c2925b;
-  color: #2c1a0e;
-  font-size: 1.1em;
-  padding: 10px 22px;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  margin: 15px 10px;
-  transition: background-color 0.3s ease;
-}
+    button {
+      background-color: #c2925b;
+      color: #2c1a0e;
+      font-size: 1.1em;
+      padding: 10px 22px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      margin: 15px 10px;
+      transition: background-color 0.3s ease;
+    }
 
-button:hover {
-  background-color: #b07a4e;
-}
+    button:hover {
+      background-color: #b07a4e;
+    }
 
-#playersCircle {
-  position: relative;
-  width: 400px;
-  height: 400px;
-  margin: 30px auto;
-  border-radius: 50%;
-  background: rgba(255, 235, 205, 0.07);
-  backdrop-filter: blur(4px);
-  box-shadow: 0 0 25px rgba(139, 69, 19, 0.2);
-}
+    #playersCircle {
+      position: relative;
+      width: 400px;
+      height: 400px;
+      margin: 30px auto;
+      border-radius: 50%;
+      background: rgba(255, 235, 205, 0.07);
+      backdrop-filter: blur(4px);
+      box-shadow: 0 0 25px rgba(139, 69, 19, 0.2);
+    }
 
-.player {
-  position: absolute;
-  width: 100px;
-  text-align: center;
-  font-weight: bold;
-  transform: translate(-50%, -50%);
-  color: #ffdb9c;
-  text-shadow: 1px 1px #3b2715;
-}
+    .player {
+      position: absolute;
+      width: 100px;
+      text-align: center;
+      font-weight: bold;
+      transform: translate(-50%, -50%);
+      color: #ffdb9c;
+      text-shadow: 1px 1px #3b2715;
+    }
 
-#gunContainer {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 10;
-}
+    #gunContainer {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 10;
+    }
 
-#gun {
-  width: 110px;
-  transition: transform 0.2s ease-in-out;
-  cursor: pointer;
-}
+    #gun {
+      width: 110px;
+      transition: transform 0.2s ease-in-out;
+      cursor: pointer;
+    }
 
-#prompt {
-  font-size: 1.4em;
-  margin-top: 25px;
-  color: #f7deb6;
-}
+    #prompt {
+      font-size: 1.4em;
+      margin-top: 25px;
+      color: #f7deb6;
+    }
 
-#countdown {
-  font-size: 1.6em;
-  margin-top: 15px;
-  color: #f4a261;
-}
-
+    #countdown {
+      font-size: 1.6em;
+      margin-top: 15px;
+      color: #f4a261;
+    }
   </style>
 </head>
 <body>
@@ -130,15 +129,16 @@ button:hover {
   <div id="game">
     <div id="playersCircle">
       <div id="gunContainer">
-        <img id="gun" src="https://pnghq.com/wp-content/uploads/pnghq.com-pistol-cartoon-png-perfec-6.png" alt="Gun" onclick="startSpin()" />
+        <img id="gun" src="sounds/5578d752b217e456464071696db2af7b-wild-west-pistole.webp" alt="Gun" onclick="startSpin()" />
       </div>
     </div>
     <div id="prompt">Click the gun to spin!</div>
     <div id="countdown"></div>
   </div>
+
   <audio id="spinSound" src="sounds/revolver-spin-96947.mp3"></audio>
   <audio id="shotSound" src="sounds/single-pistol-gunshot-33-37187.mp3"></audio>
-  
+
   <script>
     let players = [];
     let gun = null;
@@ -162,8 +162,6 @@ button:hover {
       document.getElementById('start').style.display = 'none';
       document.getElementById('setup').style.display = 'block';
     }
-    
-
 
     function startGame() {
       players = [];
@@ -177,7 +175,7 @@ button:hover {
       const circle = document.getElementById('playersCircle');
       circle.innerHTML = `
         <div id="gunContainer">
-          <img id="gun" src="https://pnghq.com/wp-content/uploads/pnghq.com-pistol-cartoon-png-perfec-6.png" alt="Gun" onclick="startSpin()" />
+          <img id="gun" src="sounds/5578d752b217e456464071696db2af7b-wild-west-pistole.webp" alt="Gun" onclick="startSpin()" />
         </div>`;
 
       const angleStep = 360 / players.length;
@@ -200,44 +198,43 @@ button:hover {
     }
 
     function startSpin() {
-  if (spinning || cooldown) return;
-  spinning = true;
-  document.getElementById('prompt').innerText = 'Spinning...';
-  document.getElementById('countdown').innerText = '';
+      if (spinning || cooldown) return;
+      spinning = true;
+      document.getElementById('prompt').innerText = 'Spinning...';
+      document.getElementById('countdown').innerText = '';
 
-  // Play spin sound
-  const spinAudio = document.getElementById('spinSound');
-  spinAudio.currentTime = 0;
-  spinAudio.play();
+      const spinAudio = document.getElementById('spinSound');
+      spinAudio.currentTime = 0;
+      spinAudio.play();
 
-  const extra = Math.floor(Math.random() * 360);
-  const fullSpins = 3 * 360;
-  const total = fullSpins + extra;
-  rotation += total;
+      const extra = Math.floor(Math.random() * 360);
+      const fullSpins = 3 * 360;
+      const total = fullSpins + extra;
+      rotation += total;
 
-  gun.style.transition = 'transform 3s ease-out';
-  gun.style.transform = `rotate(${rotation}deg)`;
+      gun.style.transition = 'transform 3s ease-out';
+      gun.style.transform = `rotate(${rotation}deg)`;
 
-  setTimeout(() => {
-    spinAudio.pause(); // Stop spinning sound
-    spinAudio.currentTime = 0;
+      setTimeout(() => {
+        spinAudio.pause();
+        spinAudio.currentTime = 0;
 
-    // Play shot sound
-    const shotAudio = document.getElementById('shotSound');
-    shotAudio.currentTime = 0;
-    shotAudio.play();
+        const shotAudio = document.getElementById('shotSound');
+        shotAudio.currentTime = 0;
+        shotAudio.play();
 
-    const finalAngle = rotation % 360;
-    const segment = 360 / players.length;
-    const index = Math.floor(((finalAngle + segment / 2) % 360) / segment);
-    const selected = players[index];
+        // The barrel points at 45 degrees relative to the gun image
+        const barrelDirection = 45;
+        const finalAngle = (rotation + barrelDirection) % 360;
+        const segment = 360 / players.length;
+        const index = Math.floor(((finalAngle + segment / 2) % 360) / segment);
+        const selected = players[index];
 
-    document.getElementById('prompt').innerText = `🎯 ${selected}, Truth or Dare?`;
-    startCooldown();
-    spinning = false;
-  }, 3100);
-}
-
+        document.getElementById('prompt').innerText = `🎯 ${selected}, Truth or Dare?`;
+        startCooldown();
+        spinning = false;
+      }, 3100);
+    }
 
     function startCooldown() {
       cooldown = true;
@@ -254,8 +251,6 @@ button:hover {
           cooldown = false;
         }
       }, 1000);
-
-      
     }
   </script>
 </body>
